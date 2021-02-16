@@ -11,7 +11,8 @@ public class Calculator {
                     [4] --> Subtrair\s
                     [5] --> Potência\s
                     [6] --> Radiciação\s
-                    [7] --> Sair da calculadora""");
+                    [7] --> Fatorial\s
+                    [8] --> Sair da calculadora""");
             System.out.print("Escolha a operação: ");
             Scanner input = new Scanner(System.in);
             int choice = input.nextInt();
@@ -45,7 +46,12 @@ public class Calculator {
                 float value2 = 0;
                 Radication obj6 = new Radication(value1, value2);
                 obj6.Root();
-            } else if(choice == 7) {
+            } else if(choice ==7) {
+                float value1 = 0;
+                float value2 = 0;
+                Factorial obj7 = new Factorial(value1, value2);
+                obj7.Calculate();
+            } else if(choice == 8) {
                 break;
             }
         }    }
