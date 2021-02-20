@@ -4,10 +4,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Arrays {
-    public String[][] array;
-    {
-        array = new String[][];
-    }
+    public String[][] array = new String[][];
+
     public Arrays() {
     }
 
